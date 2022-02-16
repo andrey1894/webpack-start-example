@@ -1,4 +1,4 @@
-# IMNA
+# WEBPACK START EXAMPLE
 
 Install `yarn` package manager.
 
