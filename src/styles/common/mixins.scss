@@ -1,0 +1,31 @@
+@mixin clearBlock($display: null) {
+  @if $display {
+    display: $display;
+  }
+
+  margin: 0;
+  padding: 0;
+  @content;
+}
+
+@mixin threeDots($width: 100%) {
+  @if $width {
+    width: $width;
+    max-width: $width;
+  }
+
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  @content;
+}
+
+@mixin placeholder {
+  :placeholder { @content; }
+  ::placeholder { @content; }
+}
+
+* {
+  background-color: red;
+}
